@@ -4,9 +4,65 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hangman</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
-  
+  <main>
+    <div class="hangman">
+      <img class="invisible" id="gallows" src="./img/assets_gallows.png"></img>
+      <img class="invisible" id="head" src="./img/assets_head.png"></img>
+      <img class="invisible" id="body" src="./img/assets_body.png"></img>
+      <img class="invisible" id="left-arm" src="./img/assets_left-arm.png"></img>
+      <img class="invisible" id="right-arm" src="./img/assets_right-arm.png"></img>
+      <img class="invisible" id="left-leg" src="./img/assets_left-leg.png"></img>
+      <img class="invisible" id="right-leg" src="./img/assets_right-leg.png"></img>
+    </div>
+    <div class="game-zone">
+      <section class="header">
+        <div class="header-text">남은 시도 횟수 : <strong id="remaining-attempts">7</strong></div>
+        <div class="header-text">남은 시간 : <strong id="remaining-time">60</strong></div>
+      </section>
+      <section class="word">
+        <div class="question-word invisible"></div>
+        <div class="answer-word invisible"></div>
+        <div class="main-word visible">
+          <div class="main-word-title">행맨 게임</div>
+          <button class="main-word-button">시작하기</button>
+        </div>
+      </section>
+      <section class="alphabet">
+        <button class="alphabet-button">A</button>
+        <button class="alphabet-button">B</button>
+        <button class="alphabet-button">C</button>
+        <button class="alphabet-button">D</button>
+        <button class="alphabet-button">E</button>
+        <button class="alphabet-button">F</button>
+        <button class="alphabet-button">G</button>
+        <button class="alphabet-button">H</button>
+        <button class="alphabet-button">I</button>
+        <button class="alphabet-button">J</button>
+        <button class="alphabet-button">K</button>
+        <button class="alphabet-button">L</button>
+        <button class="alphabet-button">M</button>
+        <button class="alphabet-button">N</button>
+        <button class="alphabet-button">O</button>
+        <button class="alphabet-button">P</button>
+        <button class="alphabet-button">Q</button>
+        <button class="alphabet-button">R</button>
+        <button class="alphabet-button">S</button>
+        <button class="alphabet-button">T</button>
+        <button class="alphabet-button">U</button>
+        <button class="alphabet-button">V</button>
+        <button class="alphabet-button">W</button>
+        <button class="alphabet-button">X</button>
+        <button class="alphabet-button">Y</button>
+        <button class="alphabet-button">Z</button>
+      </section>
+    </div>
+  </main>
 </body>
 <script src="index.js"></script>
 </html>
