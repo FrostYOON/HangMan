@@ -74,11 +74,14 @@ class System {
 
   // 게임 초기화
   cleanup() {
-    this.remainingAttempts.innerText = 7;
+    this.#count = 7;
+    if (this.remainingAttempts) {
+      this.remainingAttempts.innerText = this.#count;
+    }
     this.mainWordButton.removeEventListener('click', () => this.#start());
     this.mainWordButton.removeEventListener('click', () => this.#restart());
     makeElementInvisible(this.answerWord);
-    makeElementVisible(this.mainWord);
+    makeElementInvisible(this.mainWord);
   }
 }
 
