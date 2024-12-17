@@ -75,7 +75,6 @@ class Game {
   }
 
   #clickAlphabet = (button, resolve) => {
-    // 버튼 요소 투명도 설정 및 비활성화
     button.disabled = true;
     button.style.opacity = 0;
 

@@ -6,11 +6,11 @@ window.addEventListener('DOMContentLoaded', () => {
   const answerWord = document.querySelector('.answer-word');
   const system = new System();
 
-  Array.from(mainWordButton).forEach((button) => {
-    button.addEventListener('click', () => {
+  if (mainWordButton.innerText === '처음부터 다시하기') {
+    mainWordButton.addEventListener('click', () => {
       system.cleanup();
       makeElementInvisible(answerWord);
       system = new System();
     });
-  });
+  }
 });

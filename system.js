@@ -7,6 +7,8 @@ class System {
 
   // 남은 시도 횟수
   remainingAttempts = document.getElementById('remaining-attempts');
+  // 정답 텍스트
+  answerWord = document.querySelector('.answer-word');
   // 메인 화면
   mainWord = document.querySelector('.main-word');
   // 메인 화면 제목
