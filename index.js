@@ -1,13 +1,16 @@
-import System from './system.js';
+import System from "./system.js";
+import { makeElementInvisible } from "./utils.js";
 
 window.addEventListener('DOMContentLoaded', () => {
-  const mainWordButton = document.querySelector('.main-word-button');
+  let mainWordButton = document.querySelector('.main-word-button');
   const answerWord = document.querySelector('.answer-word');
-  let system = new System();
+  const system = new System();
 
-  mainWordButton.addEventListener('click', () => {
-    system.cleanup();
-    makeElementInvisible(answerWord);
-    system = new System();
+  Array.from(mainWordButton).forEach((button) => {
+    button.addEventListener('click', () => {
+      system.cleanup();
+      makeElementInvisible(answerWord);
+      system = new System();
+    });
   });
 });

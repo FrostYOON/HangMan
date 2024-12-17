@@ -17,11 +17,11 @@ main {
 }
 
 .invisible {
-  display: none;
+  display: none !important;
 }
 
 .visible {
-  display: flex;
+  display: flex !important;
 }
 
 .hangman {
