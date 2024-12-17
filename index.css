@@ -104,6 +104,11 @@ main {
   border-radius: 10px;
 }
 
+.question-word {
+  letter-spacing: 10px;
+  color: #fff;
+}
+
 .main-word {
   display: flex;
   flex-direction: column;

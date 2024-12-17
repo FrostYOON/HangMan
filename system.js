@@ -24,7 +24,6 @@ class System {
     // 시작 화면 초기화
     this.remainingAttempts.innerText = this.#count;
 
-    // makeElementVisible(this.mainWord);
     if (this.mainWordButton.innerText === '시작하기') {
       this.mainWordButton.addEventListener('click', () => this.#start());
     }else if (this.mainWordButton.innerText === '다시 시작') {
