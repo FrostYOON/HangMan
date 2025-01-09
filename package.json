@@ -1,0 +1,19 @@
+{
+  "name": "hangman",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "compile": "npx tsc src/*.ts --target es2020 --skipLibCheck --noResolve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FrostYOON/HangMan.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FrostYOON/HangMan/issues"
+  },
+  "homepage": "https://github.com/FrostYOON/HangMan#readme",
+  "description": ""
+}
